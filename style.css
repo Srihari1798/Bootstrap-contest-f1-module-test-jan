@@ -1,0 +1,67 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 10px 30px;
+    font-size:18px;
+}
+
+#home{
+    color:#495057!important;
+   /* margin-right: 2px!important;*/
+  
+}
+
+.nav-item > a{
+    color: #0D6EFD !important;
+    font-size: 20px !important;
+} 
+/* @media (max-width: 576px) {
+    #cardsdeck {
+      flex-direction: column;
+      width: 100vw;
+     
+    }
+    .card{
+      width: 100vw;  
+    }
+  } */
+/* mediaquries for navbar */
+
+@media (min-width: 992px) {
+    .navbar-brand {
+      display: none;
+    }
+  }
+  @media (max-width: 991px) {
+    .navbar-brand {
+      display: block;
+    }
+  }
+#bootstrapform{
+    padding:10px;
+    margin-top: 10px;
+}
+    /* bootstrap form mediaquries */
+    @media (max-width: 767px) {
+        #formcol {
+          width: 100%;
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+      
+     /* cards media quries */
+    @media(max-width:991px){
+        #carddeck{
+            display:flex;
+            flex-direction: column;
+            width: 100%;
+           
+        }
+        .card{
+            width:100vw;
+        }
+    }

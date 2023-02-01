@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="icons8-bootstrap-48.png">
+    <meta name="description" content="Bootstrap Contest f1-module-test-jan">
+    <title>Srihari Nampally Frontend 1 AccioJob 01 February 2023</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg bg-body-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand  " href="#">Company Name</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                        <ul class=" navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active " id="home" aria-current="page" href="#">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active">Contact Us</a>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-primary" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- carousel -->
+
+        <section class=" mt-2 ms-3">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" class="d-block w-100"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" class="d-block w-100"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="data:image/jpeg;base64,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"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- cards -->
+             <!-- card 1 -->
+                <div class=" d-flex  flex-nowrap  justify-content-between row-lg-4 col-sm-12 mt-4 ms-3 gap-2 " id="carddeck">        
+                <div class="card" style="width:30rem">
+                    <div class="card-header">
+                        Card Header
+                    </div>
+                    <img src="peaky 5.jpg" class="card-img-top"  alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sub Title</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">1st list item</li>
+                        <li class="list-group-item">2nd list item</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+
+                    <div class="card-footer">Card Footer</div>
+                </div>
+            
+
+                <!-- card 2 -->
+                
+                    <div class="card"  style="width:30rem">
+                        <div class="card-header">
+                            Card Header
+                        </div>
+                        <img src="peaky 5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Sub Title</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">1st list item</li>
+                            <li class="list-group-item">2nd list item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+    
+                        <div class="card-footer">Card Footer</div>
+                    </div>
+                
+
+                <!-- card 3 -->
+                  
+                <div class="card"  style="width:30rem">
+                    <div class="card-header">
+                        Card Header
+                    </div>
+                    <img src="peaky 5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sub Title</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">1st list item</li>
+                        <li class="list-group-item">2nd list item</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+
+                    <div class="card-footer">Card Footer</div>
+                </div>
+            </div>
+       
+        </section> 
+
+        <!-- accordian -->
+        <section>
+            <div class="mt-5 ms-3">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Accordion Item
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and hiding
+                                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Bootstrap table -->
+        <table class="table mt-4 my-3 ">
+            <thead >
+              <tr>
+                <th class="title1" style="width:3px">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                     </div>
+                </th>
+                <th scope="col" class="title" style="width:50px">Title </th>
+                <th scope="col">Title </th>
+                <th scope="col">Title </th>
+                <th scope="col">Title </th>
+                <th scope="col">Title </th>
+              </tr>
+            </thead>
+            <tbody >
+               
+              <tr>
+                <td><div>
+                    <input class="form-check-input" type="checkbox" value="" >
+                  </div></td>
+                  <td> <img src="icons8-grip-vertical-32.png" alt=""></td>
+                  <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td class="title2" style="width:150px">
+                    
+                    <span style="color:#0D6EFD">Publish Edit Delete</span>
+                </td>
+              </tr>
+            
+              <tr>
+                <td><div >
+                    <input class="form-check-input" type="checkbox" value="" >
+                  </div></td>
+                <td><img src="icons8-grip-vertical-32.png" alt=""></td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td class="title2" style="width:150px">
+                
+                    <span style="color:#0D6EFD">Publish Edit Delete</span>
+                </td>
+              </tr>
+             
+              <tr>
+                <td><div >
+                    <input class="form-check-input" type="checkbox" value="" >
+                  </div></td>
+                <td><img src="icons8-grip-vertical-32.png" alt=""></td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td class="title2" style="width:150px">
+                    
+                    <span style="color:#0D6EFD">Publish Edit Delete</span>
+                </td>
+              </tr>
+             
+              <tr>
+                <td><div>
+                    <input class="form-check-input" type="checkbox" value="" >
+                  </div></td>
+                <td><img src="icons8-grip-vertical-32.png" alt=""></td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td class="title2" style="width:150px">
+                   <span style="color:#0D6EFD">Publish Edit Delete</span>
+                </td>
+              </tr>
+             
+              <tr>
+                <td><div>
+                    <input class="form-check-input" type="checkbox" value="" >
+                  </div></td>
+                <td><img src="icons8-grip-vertical-32.png" alt=""></td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td class="title2" style="width:150px">
+                   <span style="color:#0D6EFD">Publish Edit Delete</span>
+                </td>
+              </tr>
+              
+              <tr>
+                <td><div>
+                    <input class="form-check-input" type="checkbox" value="" >
+                  </div></td>
+                <td><img src="icons8-grip-vertical-32.png" alt=""></td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td class="title2" style="width:150px">
+                   <span style="color:#0D6EFD">Publish Edit Delete</span>
+                </td>
+              </tr>
+              
+              <tr>
+                <td><div>
+                    <input class="form-check-input" type="checkbox" value="" >
+                  </div></td>
+                <td><img src="icons8-grip-vertical-32.png" alt=""></td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td class="title2" style="width:150px">
+                   <span style="color:#0D6EFD">Publish Edit Delete</span>
+                </td>
+              </tr>
+            
+              <tr>
+                <td><div>
+                    <input class="form-check-input" type="checkbox" value="" >
+                  </div></td>
+                <td><img src="icons8-grip-vertical-32.png" alt=""></td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td class="title2" style="width:150px">
+                   <span style="color:#0D6EFD">Publish Edit Delete</span>
+                </td>
+              </tr>
+             
+              <tr>
+                <td><div>
+                    <input class="form-check-input" type="checkbox" value="" >
+                  </div></td>
+                <td><img src="icons8-grip-vertical-32.png" alt=""></td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td class="title2" style="width:150px">
+                   <span style="color:#0D6EFD">Publish Edit Delete</span>
+                </td>
+              </tr>
+              
+              <tr>
+                <td><div>
+                    <input class="form-check-input" type="checkbox" value="" >
+                  </div></td>
+                <td><img src="icons8-grip-vertical-32.png" alt=""></td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td class="title2" style="width:150px">
+                   <span style="color:#0D6EFD">Publish Edit Delete</span>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+        
+        <!-- Bootstrap form -->
+        <div id="bootstrapform">
+            <h5>Bootstrap Form</h5>
+            <form class="row g-3 mt-3" >
+                <div class="col-lg-6" id="formcol">
+                    <input type="text" placeholder="First Name" class="form-control" id="fname">
+                </div>
+                <div class="col-lg-6" id="formcol">
+                    <input type="text" placeholder="Last Name" class="form-control" id="lname">
+                </div>
+                <div class="col-12">
+                    <input type="email" class="form-control" id="emailadd" placeholder="Email">
+                </div>
+                <div class="col-12">
+                    <input type="text" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="col-12">
+                    <input type="text" class="form-control" id="cpassword" placeholder="Confirm Password">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Submit Form</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
